@@ -9,6 +9,11 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+/**
+ * Repository for the Excuse Entity
+ *
+ * @author Cecile
+ */
 @Repository
 public interface ExcuseRepository extends JpaRepository<ExcuseDAO, Long> {
 

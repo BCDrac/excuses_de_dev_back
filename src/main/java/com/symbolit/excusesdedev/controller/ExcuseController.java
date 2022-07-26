@@ -26,6 +26,14 @@ public class ExcuseController {
     @Autowired
     private ExcuseService excuseService;
 
+    /**
+     * Get one Excuse object from its id
+     *
+     * @param id the id of the Excuse object to get from the database
+     * @return a ResponseEntity with a ExcuseDTO object with the corresponding id
+     *
+     * @author Cecile
+     */
     @GetMapping("/{id}")
     public ResponseEntity<Optional<ExcuseDTO>> getExcuse(@PathVariable Long id) {
         Optional<ExcuseDTO> excuseDTO = this.excuseService.findOne(id);
